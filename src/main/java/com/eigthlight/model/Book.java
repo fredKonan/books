@@ -45,10 +45,23 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "author=" + author +
-                ", title='" + title + '\'' +
-                ", publisher='" + publisher + '\'' +
-                '}';
+        String autors = "";
+        for (String str : author) {
+            autors += str;
+            autors += ", ";
+        }
+        if (!autors.equals("") && autors != null) {
+            return "Book{" + "\r\n" +
+                    "author:" + autors + "\r\n" +
+                    "title:'" + title + '\'' + "\r\n" +
+                    "publisher: " + publisher + '\'' + "\r\n" +
+                    '}';
+        } else {
+            return "Book { " + "\r\n" +
+                    "title:'" + title + '\'' + "\r\n" +
+                    "publisher: " + publisher + '\'' + "\r\n" +
+                    '}';
+        }
     }
-}
+
+    }
