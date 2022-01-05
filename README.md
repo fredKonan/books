@@ -6,7 +6,9 @@ This is a command line application that allows you to search the Google Books AP
 🏁 Getting started These instructions assume that you already have java, jdk jre and maven on your computer. 🕺
 Open your terminal and clone this repository in a location of your choosing. git clone and copy and past the https link on the repository
 Open the folder that your clone in your favorite IDE if you know how to run a java application on it. 
-I would recommend to use intelliJ IDE community version which is free of charge.
+
+-I would recommend to use intelliJ IDE community version which is free of charge.
+
 Install the project dependencies but open the pom.xml on the project and run add maven for more information about the project dependencies, please see the "Dependencies" section below.
 🤷 How to After install the project dependencies, you will be able to run the app class to start use the application and search for any book you want and add it to the reading list
 Challenge I faced when building the application
