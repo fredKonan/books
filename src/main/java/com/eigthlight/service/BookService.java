@@ -29,19 +29,11 @@ public class BookService {
                assert googleBook != null;
                if(googleBook.getItems().length<5){
                     for (int i=0; i<googleBook.getItems().length; i++ ){
-                        Book book = new Book();
-                        book.setAuthor(googleBook.getItems()[i].getVolumeInfo().getAuthors());
-                        book.setTitle(googleBook.getItems()[i].getVolumeInfo().getTitle());
-                        book.setPublisher(googleBook.getItems()[i].getVolumeInfo().getPublisher());
-                        items.add(book);
+                        bookMap(googleBook, items, i);
                     }
                 }
                 for (int i=0; i<5; i++ ){
-                    Book book = new Book();
-                    book.setAuthor(googleBook.getItems()[i].getVolumeInfo().getAuthors());
-                    book.setTitle(googleBook.getItems()[i].getVolumeInfo().getTitle());
-                    book.setPublisher(googleBook.getItems()[i].getVolumeInfo().getPublisher());
-                    items.add(book);
+                    bookMap(googleBook, items, i);
                 }
 
               return items;
@@ -54,7 +46,15 @@ public class BookService {
            }
         }
 
-        public void displayReadingList(){
+    private void bookMap(GoogleBook googleBook, List<Book> items, int i) {
+        Book book = new Book();
+        book.setAuthor(googleBook.getItems()[i].getVolumeInfo().getAuthors());
+        book.setTitle(googleBook.getItems()[i].getVolumeInfo().getTitle());
+        book.setPublisher(googleBook.getItems()[i].getVolumeInfo().getPublisher());
+        items.add(book);
+    }
+
+    public void displayReadingList(){
             if(readingList.size()==0){
                 System.out.println("There is no book add to your reading list.");
             }
