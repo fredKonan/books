@@ -36,7 +36,8 @@ public class Book {
     }
 
     public String getPublisher() {
-        return publisher;
+        if(this.publisher!= null && !this.publisher.equals("")) return publisher;
+        return "N/A";
     }
 
     public void setPublisher(String publisher) {
@@ -50,16 +51,17 @@ public class Book {
             autors += str;
             autors += ", ";
         }
-        if (!autors.equals("") && autors != null) {
+        if (publisher!=null && !publisher.equals("") ) {
             return "Book{" + "\r\n" +
                     "author:" + autors + "\r\n" +
                     "title:'" + title + '\'' + "\r\n" +
                     "publisher: " + publisher + '\'' + "\r\n" +
                     '}';
         } else {
-            return "Book { " + "\r\n" +
+          return  "Book{" + "\r\n" +
+                    "author:" + autors + "\r\n" +
                     "title:'" + title + '\'' + "\r\n" +
-                    "publisher: " + publisher + '\'' + "\r\n" +
+                    "publisher: N/A"  + "\r\n" +
                     '}';
         }
     }
