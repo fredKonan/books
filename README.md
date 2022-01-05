@@ -15,9 +15,9 @@ Framework used: Spring boot Design: MVC pattern
 
 -- Run the Application using Command line interface--
 
-1 - clone the application on your computer. 
+1 - clone the application on your computer and save it as books.java
 
-2- Open a command prompt window and go to the directory where you saved the java program (books.java). Assume it's C:\.
+2- Open a command prompt window and go to the directory where you saved the java program (app.java). Assume it's C:\.
 
 3- Type 'javac books.java' and press enter to compile your code. If there are no errors in the code, the command prompt will take you to the next line (Assumption: The path variable is set).
 
