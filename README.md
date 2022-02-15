@@ -1,5 +1,5 @@
-# books
-8th Light Application 
+# Google books API
+
 
 Retrieve 5 books from google book's API by just enter a query
 This is a command line application that allows you to search the Google Books API and create a reading list.
@@ -15,11 +15,16 @@ Challenge I faced when building the application
 Deserialized the Json file to a java object with multiple classes to retrieve only the specific value that the user need. Writing a test
 Framework used: Spring boot Design: MVC pattern
 
+## how to use the application.
+-- Make sure your have JDK install in your local development machine
+-- your can use your favorit editor, but I hight recommend InttelliJ community edition (because it free of charge)
+
 -- Run the Application using Command line interface--
 
 1 - clone the application on your computer and save 
 
 2- Open a command prompt window and go to the directory where you saved the java program (books). Assume it's C:\.
+
 
 3- Type 'mvn compile' and press enter to compile your code. If there are no errors in the code, the command prompt will take you to the next line (Assumption: The path variable is set).
 
